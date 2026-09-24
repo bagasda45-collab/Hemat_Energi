@@ -1,256 +1,368 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bijak Energi: Kampanye Konservasi dan Hemat Energi Sekolah</title>
-  
-  <!-- Google Fonts: Newsreader (Editorial Serif) & Inter (Clean UI Sans) -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,400;1,6..72,600&display=swap" rel="stylesheet">
-  
-  <!-- Main Stylesheet -->
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bijak Energi: Kampanye Konservasi dan Hemat Energi Sekolah</title>
 
-  <!-- Skip Link for Keyboard Accessibility (R-32) -->
-  <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
+    <!-- Google Fonts: Newsreader (Editorial Serif) & Inter (Clean UI Sans) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,500;0,6..72,700;1,6..72,400;1,6..72,600&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- ================= HEADER & NAVIGATION ================= -->
-  <header class="site-header">
-    <div class="container nav-container">
-      <a href="index.html" class="brand-logo">
-        <div class="brand-symbol">
-          <!-- Clean Energy Leaf / Circuit SVG Icon -->
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
-          </svg>
-        </div>
-        <div class="brand-title">Bijak<span>Energi</span></div>
-      </a>
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Skip Link for Keyboard Accessibility (R-32) -->
+    <a href="#main-content" class="skip-link">Lewati ke konten utama</a>
 
-      <button class="nav-toggle" id="navToggle" aria-label="Buka Menu Navigasi" aria-expanded="false">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-
-      <nav aria-label="Navigasi Utama">
-        <ul class="nav-menu" id="navMenu">
-          <li><a href="index.html" class="nav-link active">Beranda</a></li>
-          <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
-          <li><a href="data.html" class="nav-link">Data & Fakta</a></li>
-          <li><a href="aksi.html" class="nav-link">Aksi & Rekomendasi</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <!-- ================= MAIN CONTENT ================= -->
-  <main id="main-content">
-    <!-- HERO SECTION -->
-    <section class="hero-section">
-      <div class="container">
-        <div class="hero-grid">
-          <div class="hero-text">
-            <div class="hero-kicker">Proyek Education for Sustainable Development</div>
-            <h1 class="hero-title">
-              Matikan yang Tak Perlu, <em>Selamatkan Bumi</em> untuk Masa Depan.
-            </h1>
-            <p class="hero-tagline">
-              Langkah sederhana mulai dari mematikan saklar dan mencabut steker di ruang kelas menciptakan dampak nyata bagi konservasi energi sekolah kita.
-            </p>
-            <div class="hero-cta-group">
-              <a href="tentang.html" class="btn btn-primary">Pelajari Kampanye</a>
-              <a href="#alasan" class="btn btn-secondary">Mengapa Penting?</a>
-            </div>
+    <!-- ================= HEADER & NAVIGATION ================= -->
+    <header class="site-header">
+      <div class="container nav-container">
+        <a href="index.html" class="brand-logo">
+          <div class="brand-symbol">
+            <!-- Clean Energy Leaf / Circuit SVG Icon -->
+            <svg
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path>
+            </svg>
           </div>
+          <div class="brand-title">Bijak<span>Energi</span></div>
+        </a>
 
-          <!-- Interactive Simulator Card -->
-          <div class="hero-interactive-card">
-            <div class="card-header-sim">
-              <h3>
-                <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#0f766e" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <rect x="4" y="2" width="16" height="20" rx="2"></rect>
-                  <line x1="8" y1="6" x2="16" y2="6"></line>
-                  <line x1="8" y1="10" x2="16" y2="10"></line>
-                  <line x1="8" y1="14" x2="16" y2="14"></line>
-                </svg>
-                Cek Potensi Hemat Kelas
-              </h3>
-              <p>Pilih kebiasaan baik di kelas untuk melihat estimasi penghematan beban daya listrik:</p>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Buka Menu Navigasi"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav aria-label="Navigasi Utama">
+          <ul class="nav-menu" id="navMenu">
+            <li><a href="index.html" class="nav-link active">Beranda</a></li>
+            <li><a href="tentang.html" class="nav-link">Tentang Kami</a></li>
+            <li><a href="data.html" class="nav-link">Data & Fakta</a></li>
+            <li><a href="aksi.html" class="nav-link">Aksi & Rekomendasi</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- ================= MAIN CONTENT ================= -->
+    <main id="main-content">
+      <!-- HERO SECTION -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-text">
+              <div class="hero-kicker">
+                Proyek Education for Sustainable Development
+              </div>
+              <h1 class="hero-title">
+                Matikan yang Tak Perlu, <em>Selamatkan Bumi</em> untuk Masa
+                Depan.
+              </h1>
+              <p class="hero-tagline">
+                Langkah sederhana mulai dari mematikan saklar dan mencabut
+                steker di ruang kelas menciptakan dampak nyata bagi konservasi
+                energi sekolah kita.
+              </p>
+              <div class="hero-cta-group">
+                <a href="tentang.html" class="btn btn-primary"
+                  >Pelajari Kampanye</a
+                >
+                <a href="#alasan" class="btn btn-secondary">Mengapa Penting?</a>
+              </div>
             </div>
 
-            <div class="calc-checklist">
-              <label class="calc-item">
-                <span>Matikan lampu ruang kelas saat siang hari (4 tabung)</span>
-                <input type="checkbox" class="calc-check" data-watt="140" checked>
-              </label>
-              <label class="calc-item">
-                <span>Matikan proyektor LCD saat tidak dipakai presentasi</span>
-                <input type="checkbox" class="calc-check" data-watt="250" checked>
-              </label>
-              <label class="calc-item">
-                <span>Matikan kipas angin dinding/gantung saat ruang kelas kosong</span>
-                <input type="checkbox" class="calc-check" data-watt="120">
-              </label>
-              <label class="calc-item">
-                <span>Cabut charger laptop atau HP dari stopkontak saat baterai penuh</span>
-                <input type="checkbox" class="calc-check" data-watt="75">
-              </label>
-            </div>
+            <!-- Interactive Simulator Card -->
+            <div class="hero-interactive-card">
+              <div class="card-header-sim">
+                <h3>
+                  <svg
+                    viewBox="0 0 24 24"
+                    width="20"
+                    height="20"
+                    fill="none"
+                    stroke="#0f766e"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  >
+                    <rect x="4" y="2" width="16" height="20" rx="2"></rect>
+                    <line x1="8" y1="6" x2="16" y2="6"></line>
+                    <line x1="8" y1="10" x2="16" y2="10"></line>
+                    <line x1="8" y1="14" x2="16" y2="14"></line>
+                  </svg>
+                  Cek Potensi Hemat Kelas
+                </h3>
+                <p>
+                  Pilih kebiasaan baik di kelas untuk melihat estimasi
+                  penghematan beban daya listrik:
+                </p>
+              </div>
 
-            <div class="calc-result-box">
-              <div class="result-title">Estimasi Daya Terhemat di 1 Kelas</div>
-              <div class="result-value" id="simResultValue">± 390 Watt</div>
-              <div class="result-desc" id="simResultDesc">
-                Setara dengan mencegah pemborosan listrik 1.950 Watt-jam setiap hari sekolah (5 jam pelajaran).
+              <div class="calc-checklist">
+                <label class="calc-item">
+                  <span
+                    >Matikan lampu ruang kelas saat siang hari (4 tabung)</span
+                  >
+                  <input
+                    type="checkbox"
+                    class="calc-check"
+                    data-watt="140"
+                    checked
+                  />
+                </label>
+                <label class="calc-item">
+                  <span
+                    >Matikan proyektor LCD saat tidak dipakai presentasi</span
+                  >
+                  <input
+                    type="checkbox"
+                    class="calc-check"
+                    data-watt="250"
+                    checked
+                  />
+                </label>
+                <label class="calc-item">
+                  <span
+                    >Matikan kipas angin dinding/gantung saat ruang kelas
+                    kosong</span
+                  >
+                  <input type="checkbox" class="calc-check" data-watt="120" />
+                </label>
+                <label class="calc-item">
+                  <span
+                    >Cabut charger laptop atau HP dari stopkontak saat baterai
+                    penuh</span
+                  >
+                  <input type="checkbox" class="calc-check" data-watt="75" />
+                </label>
+              </div>
+
+              <div class="calc-result-box">
+                <div class="result-title">
+                  Estimasi Daya Terhemat di 1 Kelas
+                </div>
+                <div class="result-value" id="simResultValue">± 390 Watt</div>
+                <div class="result-desc" id="simResultDesc">
+                  Setara dengan mencegah pemborosan listrik 1.950 Watt-jam
+                  setiap hari sekolah (5 jam pelajaran).
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- ================= KENAPA KAMPANYE INI PENTING ================= -->
-    <section class="section section-alt" id="alasan">
+      <!-- ================= KENAPA KAMPANYE INI PENTING ================= -->
+      <section class="section section-alt" id="alasan">
+        <div class="container">
+          <div class="section-header">
+            <div class="section-kicker">Latar Belakang Masalah</div>
+            <h2 class="section-title">
+              Mengapa Kita Perlu Mengubah Kebiasaan?
+            </h2>
+            <p class="section-subtitle">
+              Pembangkit listrik sebagian besar masih mengandalkan bahan bakar
+              fosil. Setiap kilowatt-jam energi yang terbuang percuma menambah
+              beban emisi karbon lingkungan.
+            </p>
+          </div>
+
+          <div class="grid-3">
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <!-- Plug Icon SVG -->
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path d="M12 22v-5"></path>
+                  <path d="M9 8V2"></path>
+                  <path d="M15 2v6"></path>
+                  <path d="M18 8v5a6 6 0 0 1-12 0V8z"></path>
+                </svg>
+              </div>
+              <h3>Vampire Power (Daya Siluman)</h3>
+              <p>
+                Peralatan elektronik seperti proyektor, charger, dan komputer
+                laboratorium yang tetap tercolok dalam mode siaga terus menyerap
+                listrik sepanjang hari.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <!-- Sun / Natural Light Icon SVG -->
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <circle cx="12" cy="12" r="4"></circle>
+                  <path d="M12 2v2"></path>
+                  <path d="M12 20v2"></path>
+                  <path d="m4.93 4.93 1.41 1.41"></path>
+                  <path d="m17.66 17.66 1.41 1.41"></path>
+                  <path d="M2 12h2"></path>
+                  <path d="M20 12h2"></path>
+                  <path d="m6.34 17.66-1.41 1.41"></path>
+                  <path d="m19.07 4.93-1.41 1.41"></path>
+                </svg>
+              </div>
+              <h3>Pemanfaatan Cahaya Alami</h3>
+              <p>
+                Ruang kelas dengan jendela besar seringkali tetap menyalakan
+                semua lampu di siang hari. Membuka tirai memberikan pencahayaan
+                alami yang lebih sehat bagi mata.
+              </p>
+            </div>
+
+            <div class="feature-card">
+              <div class="feature-icon-wrap">
+                <!-- Sustainability Leaf Icon SVG -->
+                <svg
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                >
+                  <path
+                    d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"
+                  ></path>
+                  <path
+                    d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"
+                  ></path>
+                </svg>
+              </div>
+              <h3>Kelestarian Lingkungan Bersama</h3>
+              <p>
+                Membangun budaya disiplin energi di sekolah adalah bagian dari
+                tujuan pembangunan berkelanjutan (SDGs) yang membentuk karakter
+                generasi muda peduli iklim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ALUR KAMPANYE / ROADMAP TEASER ================= -->
+      <section class="section">
+        <div class="container">
+          <div class="teaser-box">
+            <h2>Tahapan Pelaksanaan Proyek</h2>
+            <p>
+              Kampanye ini dibangun secara bertahap berbasis kolaborasi dan data
+              observasi nyata warga sekolah.
+            </p>
+
+            <div class="phases-preview">
+              <div class="phase-item current">
+                <span class="phase-num">LANGKAH 1 (SELESAI)</span>
+                <h4>1. Fondasi Kampanye</h4>
+                <p>
+                  Membangun media pengenalan, pesan ajakan, dan struktur
+                  informasi utama.
+                </p>
+              </div>
+
+              <div class="phase-item">
+                <span class="phase-num">LANGKAH 2</span>
+                <h4>2. Bukti & Data Nyata</h4>
+                <p>
+                  Visualisasi grafik hasil angket dan observasi langsung lintas
+                  mata pelajaran.
+                </p>
+              </div>
+
+              <div class="phase-item">
+                <span class="phase-num">LANGKAH 3</span>
+                <h4>3. Rekomendasi & Aksi</h4>
+                <p>
+                  Panduan rekomendasi terarah serta tantangan aksi hemat energi
+                  bagi warga sekolah.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
       <div class="container">
-        <div class="section-header">
-          <div class="section-kicker">Latar Belakang Masalah</div>
-          <h2 class="section-title">Mengapa Kita Perlu Mengubah Kebiasaan?</h2>
-          <p class="section-subtitle">
-            Pembangkit listrik sebagian besar masih mengandalkan bahan bakar fosil. Setiap kilowatt-jam energi yang terbuang percuma menambah beban emisi karbon lingkungan.
-          </p>
-        </div>
-
-        <div class="grid-3">
-          <div class="feature-card">
-            <div class="feature-icon-wrap">
-              <!-- Plug Icon SVG -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M12 22v-5"></path>
-                <path d="M9 8V2"></path>
-                <path d="M15 2v6"></path>
-                <path d="M18 8v5a6 6 0 0 1-12 0V8z"></path>
-              </svg>
-            </div>
-            <h3>Vampire Power (Daya Siluman)</h3>
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="brand-title">Bijak<span>Energi</span></div>
             <p>
-              Peralatan elektronik seperti proyektor, charger, dan komputer laboratorium yang tetap tercolok dalam mode siaga terus menyerap listrik sepanjang hari.
+              Media kampanye edukatif berbasis proyek Education for Sustainable
+              Development (ESD) untuk mewujudkan lingkungan sekolah ramah
+              energi.
             </p>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-icon-wrap">
-              <!-- Sun / Natural Light Icon SVG -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="4"></circle>
-                <path d="M12 2v2"></path>
-                <path d="M12 20v2"></path>
-                <path d="m4.93 4.93 1.41 1.41"></path>
-                <path d="m17.66 17.66 1.41 1.41"></path>
-                <path d="M2 12h2"></path>
-                <path d="M20 12h2"></path>
-                <path d="m6.34 17.66-1.41 1.41"></path>
-                <path d="m19.07 4.93-1.41 1.41"></path>
-              </svg>
-            </div>
-            <h3>Pemanfaatan Cahaya Alami</h3>
-            <p>
-              Ruang kelas dengan jendela besar seringkali tetap menyalakan semua lampu di siang hari. Membuka tirai memberikan pencahayaan alami yang lebih sehat bagi mata.
-            </p>
+          <div class="footer-links">
+            <h4>Navigasi Halaman</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="tentang.html">Tentang Kampanye</a></li>
+              <li><a href="data.html">Data & Fakta</a></li>
+              <li><a href="aksi.html">Aksi & Rekomendasi</a></li>
+            </ul>
           </div>
 
-          <div class="feature-card">
-            <div class="feature-icon-wrap">
-              <!-- Sustainability Leaf Icon SVG -->
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                <path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"></path>
-                <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"></path>
-              </svg>
-            </div>
-            <h3>Kelestarian Lingkungan Bersama</h3>
-            <p>
-              Membangun budaya disiplin energi di sekolah adalah bagian dari tujuan pembangunan berkelanjutan (SDGs) yang membentuk karakter generasi muda peduli iklim.
-            </p>
+          <div class="footer-links">
+            <h4>Kolaborasi Mapel</h4>
+            <ul>
+              <li><a href="tentang.html#mapel">PABP (Etika Lingkungan)</a></li>
+              <li>
+                <a href="tentang.html#mapel">Matematika (Olah Data Angket)</a>
+              </li>
+              <li>
+                <a href="tentang.html#mapel"
+                  >Bahasa Indonesia (Pesan Persuasi)</a
+                >
+              </li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
 
-    <!-- ================= ALUR KAMPANYE / ROADMAP TEASER ================= -->
-    <section class="section">
-      <div class="container">
-        <div class="teaser-box">
-          <h2>Tahapan Pelaksanaan Proyek</h2>
+        <div class="footer-bottom">
           <p>
-            Kampanye ini dibangun secara bertahap berbasis kolaborasi dan data observasi nyata warga sekolah.
-          </p>
-
-          <div class="phases-preview">
-            <div class="phase-item current">
-              <span class="phase-num">LANGKAH 1 (SELESAI)</span>
-              <h4>1. Fondasi Kampanye</h4>
-              <p>Membangun media pengenalan, pesan ajakan, dan struktur informasi utama.</p>
-            </div>
-
-            <div class="phase-item">
-              <span class="phase-num">LANGKAH 2</span>
-              <h4>2. Bukti & Data Nyata</h4>
-              <p>Visualisasi grafik hasil angket dan observasi langsung lintas mata pelajaran.</p>
-            </div>
-
-            <div class="phase-item">
-              <span class="phase-num">LANGKAH 3</span>
-              <h4>3. Rekomendasi & Aksi</h4>
-              <p>Panduan rekomendasi terarah serta tantangan aksi hemat energi bagi warga sekolah.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <!-- ================= FOOTER ================= -->
-  <footer class="site-footer">
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <div class="brand-title">Bijak<span>Energi</span></div>
-          <p>
-            Media kampanye edukatif berbasis proyek Education for Sustainable Development (ESD) untuk mewujudkan lingkungan sekolah ramah energi.
+            &copy; 2026 Kampanye Konservasi Energi Sekolah: Proyek Siswa
+            Berkelanjutan.
           </p>
         </div>
-
-        <div class="footer-links">
-          <h4>Navigasi Halaman</h4>
-          <ul>
-            <li><a href="index.html">Beranda</a></li>
-            <li><a href="tentang.html">Tentang Kampanye</a></li>
-            <li><a href="data.html">Data & Fakta</a></li>
-            <li><a href="aksi.html">Aksi & Rekomendasi</a></li>
-          </ul>
-        </div>
-
-        <div class="footer-links">
-          <h4>Kolaborasi Mapel</h4>
-          <ul>
-            <li><a href="tentang.html#mapel">PABP & Karakter (Etika Lingkungan)</a></li>
-            <li><a href="tentang.html#mapel">Matematika (Olah Data Angket)</a></li>
-            <li><a href="tentang.html#mapel">Bahasa Indonesia (Pesan Persuasi)</a></li>
-          </ul>
-        </div>
       </div>
+    </footer>
 
-      <div class="footer-bottom">
-        <p>&copy; 2026 Kampanye Konservasi Energi Sekolah: Proyek Siswa Berkelanjutan.</p>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Script -->
-  <script src="js/main.js"></script>
-</body>
+    <!-- Script -->
+    <script src="js/main.js"></script>
+  </body>
 </html>
