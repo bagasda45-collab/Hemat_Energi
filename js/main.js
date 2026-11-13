@@ -108,6 +108,27 @@ document.addEventListener('DOMContentLoaded', () => {
     updateCalculator();
   }
 
+  const data = typeof DATA_ENERGI !== 'undefined' ? DATA_ENERGI : null;
+  if (data && document.getElementById('averageChart')) {
+    const indicators = data.per_butir;
+    document.getElementById('totalRespondents').textContent = data.meta.jumlah_responden.toLocaleString('id-ID');
+    document.getElementById('averageScore').textContent = data.ringkasan.rata_rata_skor.toFixed(2).replace('.', ',');
+    document.getElementById('topCategory').textContent = 'Sangat Baik';
+    document.getElementById('insightText').textContent = `Sebanyak ${data.ringkasan.kategori_persen['Sangat Baik']}% responden berada pada kategori sangat baik. Indikator tertinggi adalah ${data.ringkasan.sorotan.butir_tertinggi[0].label} dengan skor ${data.ringkasan.sorotan.butir_tertinggi[0].rata_rata.toFixed(2)}.`;
+
+    new Chart(document.getElementById('averageChart'), {
+      type: 'bar',
+      data: { labels: indicators.map(item => item.kode), datasets: [{ label: 'Rata-rata skor', data: indicators.map(item => item.rata_rata), backgroundColor: '#0f766e', borderRadius: 6 }] },
+      options: { responsive: true, maintainAspectRatio: false, scales: { y: { min: 0, max: 4, ticks: { stepSize: 1 } } }, plugins: { legend: { display: false } } }
+    });
+
+    new Chart(document.getElementById('categoryChart'), {
+      type: 'doughnut',
+      data: { labels: Object.keys(data.ringkasan.kategori), datasets: [{ data: Object.values(data.ringkasan.kategori), backgroundColor: ['#0f766e', '#f59e0b', '#94a3b8', '#ef4444'], borderWidth: 0 }] },
+      options: { responsive: true, maintainAspectRatio: false, plugins: { legend: { position: 'bottom' } } }
+    });
+  }
+
   // 3. Smooth Intersection Observer (Scroll Reveal)
   const revealElements = document.querySelectorAll('.feature-card, .phase-item, .mapel-card, .about-content, .team-badge-box');
   

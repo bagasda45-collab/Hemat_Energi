@@ -63,20 +63,16 @@
 
     <section class="section">
       <div class="container">
-        <div class="placeholder-card">
-          <div class="placeholder-icon-wrap">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
-          </div>
-          <h2 style="font-family: var(--font-heading); font-size: 1.6rem; margin-bottom: 0.5rem; color: #0f172a;">Visualisasi Data & Grafik</h2>
-          <p style="color: var(--text-muted); max-width: 540px; margin: 0 auto 1.5rem; font-size: 0.95rem; line-height: 1.65;">
-            Pengumpulan dan analisis data angket warga sekolah sedang diproses. Grafik temuan pemahaman energi akan segera ditampilkan di sini.
-          </p>
-          <a href="index.html" class="btn btn-secondary">Kembali ke Beranda</a>
+        <div class="data-summary-grid">
+          <div class="data-stat"><span>Responden</span><strong id="totalRespondents">-</strong></div>
+          <div class="data-stat"><span>Rata-rata skor</span><strong id="averageScore">-</strong></div>
+          <div class="data-stat"><span>Kategori tertinggi</span><strong id="topCategory">-</strong></div>
         </div>
+        <div class="chart-grid">
+          <div class="chart-card"><h2>Rata-rata Skor per Indikator</h2><div class="chart-wrap"><canvas id="averageChart"></canvas></div></div>
+          <div class="chart-card"><h2>Kategori Perilaku Siswa</h2><div class="chart-wrap"><canvas id="categoryChart"></canvas></div></div>
+        </div>
+        <div class="chart-card insight-card"><h2>Temuan Utama</h2><p id="insightText">Memuat analisis data...</p></div>
       </div>
     </section>
   </main>
@@ -118,7 +114,8 @@
     </div>
   </footer>
 
-  <!-- Script -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="js/data-perilaku-energi.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

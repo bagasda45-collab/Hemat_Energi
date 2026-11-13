@@ -732,6 +732,55 @@ body {
   line-height: 1.55;
 }
 
+.data-summary-grid, .chart-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.data-stat, .chart-card {
+  background: #ffffff;
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+}
+
+.data-stat span { display: block; color: var(--text-muted); font-size: 0.85rem; margin-bottom: 0.4rem; }
+.data-stat strong { font-family: var(--font-heading); font-size: 1.8rem; color: var(--primary-dark); }
+.chart-grid { grid-template-columns: repeat(2, 1fr); }
+.chart-card h2 { font-family: var(--font-heading); font-size: 1.25rem; margin-bottom: 1rem; color: var(--text-main); }
+.chart-wrap { height: 320px; position: relative; }
+.insight-card { margin-top: 1.5rem; }
+.insight-card p { color: var(--text-muted); line-height: 1.7; }
+
+.action-intro {
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+.action-highlight {
+  background: var(--primary-dark);
+  color: #ffffff;
+  padding: 1.5rem;
+  border-radius: var(--radius-lg);
+}
+.action-highlight strong { display: block; font-family: var(--font-heading); font-size: 2.3rem; }
+.action-highlight span { display: block; margin-top: .35rem; font-size: .85rem; line-height: 1.5; color: #ccfbf1; }
+.recommendation-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; }
+.recommendation-card { padding: 1.5rem; border: 1px solid var(--border-color); border-radius: var(--radius-lg); background: #fff; }
+.recommendation-number { color: var(--primary); font-weight: 700; font-size: .8rem; }
+.recommendation-card h3 { font-family: var(--font-heading); margin: .65rem 0; font-size: 1.25rem; }
+.recommendation-card p, .recommendation-card strong { color: var(--text-muted); line-height: 1.65; font-size: .9rem; }
+.recommendation-card strong { display: block; margin-top: 1rem; color: var(--primary-dark); }
+.action-plan { margin-top: 2rem; padding: 1.75rem; background: #f0fdfa; border: 1px solid #99f6e4; border-radius: var(--radius-lg); display: grid; gap: .8rem; }
+.action-plan > div { margin-bottom: .5rem; }
+.action-plan label { color: var(--text-main); font-size: .95rem; }
+.action-plan input { width: 1rem; height: 1rem; margin-right: .5rem; accent-color: var(--primary); }
+
 /* ================= PLACEHOLDER SECTION ================= */
 .placeholder-card {
   text-align: center;
@@ -850,6 +899,7 @@ body {
 
 /* ================= RESPONSIVE DESIGN (R-03) ================= */
 @media (max-width: 900px) {
+  .action-intro { grid-template-columns: 1fr; }
   .hero-grid,
   .about-grid,
   .footer-grid {
@@ -858,7 +908,10 @@ body {
   }
 
   .grid-3,
-  .phases-preview {
+  .phases-preview,
+  .data-summary-grid,
+  .chart-grid,
+  .recommendation-grid {
     grid-template-columns: 1fr;
   }
 
